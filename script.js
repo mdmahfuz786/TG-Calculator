@@ -62,21 +62,4 @@ keys.addEventListener("click", e=>{
 });
 
 /* ---------- INIT ---------- */
-updateDisplay();
-function evaluate(){
-  if(!expression) return;
-
-  // ✅ 0786 secret redirect check
-  if(expression === "0786") {
-    window.location.href = "https://mdmahfuz786.github.io/TG-Bookmark-/";
-    return;
-  }
-
-  try{
-    const result = Function(`return (${expression})`)();
-    expression = String(result);
-  }catch{
-    expression="Error";
-  }
-  updateDisplay();
-}
+updateDisplay(); 
