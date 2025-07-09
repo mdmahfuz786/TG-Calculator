@@ -63,14 +63,3 @@ keys.addEventListener("click", e=>{
 
 /* ---------- INIT ---------- */
 updateDisplay(); 
-  if (display.value === "0786") {
-    // Redirect to another website
-    window.location.href = "https://mdmahfuz786.github.io/TG-Bookmark-/";  // <- Change this to your desired URL
-  } else {
-    try {
-      display.value = eval(display.value);
-    } catch {
-      display.value = "Error";
-    }
-  }
-  }
